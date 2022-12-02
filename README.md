@@ -1,4 +1,4 @@
-<h1 align="center"> Títulos Netflix Disney e Amazon </h1>
+<h1 align="center"> Títulos Netflix, Disney e Amazon </h1>
 
 <h4 align="center">Exercício desenvolvido em SQL, contendo uma exploração dos dados de 3 tabelas contendo títulos da Netflix, Disney Plus e Amazon Prime.</h4>
 
