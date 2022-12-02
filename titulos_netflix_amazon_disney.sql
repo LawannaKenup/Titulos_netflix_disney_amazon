@@ -1,4 +1,4 @@
--- Criação de 3 tabelas temporarias chamadas 'netflix', 'disney' e 'amazon' contendo uma nova
+-- Criação de 3 tabelas temporarias chamadas 'netflix', 'disney' e 'Amazon' contendo uma nova
 -- coluna chamada 'show_id2' com um novo id para as tabelas 'netflix_titles', 'disney_plus_titles',
 -- e 'amazon_prime_titles'.
 
@@ -314,7 +314,7 @@ RETURN
 			END AS titulo
 			FROM tabelao1)x 
 		LEFT JOIN classificacao z ON x.title = x.title
-		WHERE titulo IS NOT Null AND classificacao >= '***'
+		WHERE titulo IS NOT Null AND classificacao >= '***' AND "type" = 'Movie'
 	)
 	
 	SELECT  titulo 
@@ -350,7 +350,8 @@ RETURN
 				END AS titulo
 				FROM tabelao1)x 
 				LEFT JOIN classificacao z ON x.title = x.title
-				WHERE titulo IS NOT Null AND classificacao >= '***')
+				WHERE titulo IS NOT Null AND classificacao >= '***' AND "type" = 'Movie'
+	)
 	
 	SELECT  titulo 
 	FROM(
